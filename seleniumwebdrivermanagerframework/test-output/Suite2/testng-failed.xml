@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite2]" parallel="methods">
+  <test thread-count="5" name="Test2" parallel="methods">
+    <classes>
+      <class name="test.Testng_demo">
+        <methods>
+          <include name="google_search"/>
+          <include name="google_search2"/>
+        </methods>
+      </class> <!-- test.Testng_demo -->
+      <class name="test.Testng_demo2"/>
+    </classes>
+  </test> <!-- Test2 -->
+</suite> <!-- Failed suite [Suite2] -->
