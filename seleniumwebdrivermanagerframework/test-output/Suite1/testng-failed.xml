@@ -1,9 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite1]">
-  <test name="Test1">
+<suite thread-count="3" guice-stage="DEVELOPMENT" name="Failed suite [Suite1]" parallel="tests">
+  <parameter name="Browsername" value="Firefox"/>
+  <test name="chromebrowser">
+    <parameter name="Browsername" value="Chrome"/>
     <classes>
-      <class name="demo.Testng_paramaters"/>
+      <class name="demo.Testng_Multi_browser"/>
     </classes>
-  </test> <!-- Test1 -->
+  </test> <!-- chromebrowser -->
+  <test name="edgebrowser">
+    <parameter name="Browsername" value="Edge"/>
+    <classes>
+      <class name="demo.Testng_Multi_browser"/>
+    </classes>
+  </test> <!-- edgebrowser -->
+  <test name="Firefoxbrowser">
+    <parameter name="Browsername" value="Firefox"/>
+    <classes>
+      <class name="demo.Testng_Multi_browser"/>
+    </classes>
+  </test> <!-- Firefoxbrowser -->
+  <test name="Firefoxbrowser(failed)" parallel="tests">
+    <parameter name="Browsername" value="Firefox"/>
+    <classes>
+      <class name="demo.Testng_Multi_browser">
+        <methods>
+          <include name="teardown"/>
+          <include name="teardown"/>
+          <include name="teardown"/>
+          <include name="setuptest"/>
+          <include name="setuptest"/>
+          <include name="setuptest"/>
+          <include name="Test1"/>
+        </methods>
+      </class> <!-- demo.Testng_Multi_browser -->
+    </classes>
+  </test> <!-- Firefoxbrowser(failed) -->
 </suite> <!-- Failed suite [Suite1] -->

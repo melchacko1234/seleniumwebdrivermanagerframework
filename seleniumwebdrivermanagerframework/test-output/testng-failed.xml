@@ -3,18 +3,7 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test verbose="2" name="Default test">
     <classes>
-      <class name="demo.Orangehrm_demo"/>
+      <class name="demo.Testng_multigroups_demo"/>
     </classes>
   </test> <!-- Default test -->
-  <test name="Default test(failed)">
-    <classes>
-      <class name="demo.Orangehrm_demo">
-        <methods>
-          <include name="setUp"/>
-          <include name="tearDown"/>
-          <include name="test1"/>
-        </methods>
-      </class> <!-- demo.Orangehrm_demo -->
-    </classes>
-  </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
