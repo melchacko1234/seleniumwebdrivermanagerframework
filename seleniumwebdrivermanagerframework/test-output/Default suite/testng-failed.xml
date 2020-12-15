@@ -3,7 +3,7 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test verbose="2" name="Default test">
     <classes>
-      <class name="demo.Testng_multigroups_demo"/>
+      <class name="demo.Orangehrm_demo"/>
     </classes>
   </test> <!-- Default test -->
 </suite> <!-- Failed suite [Default suite] -->

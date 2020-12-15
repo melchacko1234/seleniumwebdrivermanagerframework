@@ -1,49 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="4" passed="4">
+<testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="72" started-at="2020-10-21T11:07:36Z" finished-at="2020-10-21T11:07:36Z">
+  <suite name="Default suite" duration-ms="22728" started-at="2020-10-26T04:15:24Z" finished-at="2020-10-26T04:15:47Z">
     <groups>
-      <group name="Allclasstest">
-        <method signature="Testng_multigroups_demo.test1()[pri:0, instance:demo.Testng_multigroups_demo@4667ae56]" name="test1" class="demo.Testng_multigroups_demo"/>
-        <method signature="Testng_multigroups_demo.test2()[pri:0, instance:demo.Testng_multigroups_demo@4667ae56]" name="test2" class="demo.Testng_multigroups_demo"/>
-        <method signature="Testng_multigroups_demo.test3()[pri:0, instance:demo.Testng_multigroups_demo@4667ae56]" name="test3" class="demo.Testng_multigroups_demo"/>
-        <method signature="Testng_multigroups_demo.test4()[pri:0, instance:demo.Testng_multigroups_demo@4667ae56]" name="test4" class="demo.Testng_multigroups_demo"/>
-      </group> <!-- Allclasstest -->
-      <group name="regression">
-        <method signature="Testng_multigroups_demo.test2()[pri:0, instance:demo.Testng_multigroups_demo@4667ae56]" name="test2" class="demo.Testng_multigroups_demo"/>
-      </group> <!-- regression -->
-      <group name="smoke">
-        <method signature="Testng_multigroups_demo.test1()[pri:0, instance:demo.Testng_multigroups_demo@4667ae56]" name="test1" class="demo.Testng_multigroups_demo"/>
-        <method signature="Testng_multigroups_demo.test3()[pri:0, instance:demo.Testng_multigroups_demo@4667ae56]" name="test3" class="demo.Testng_multigroups_demo"/>
-      </group> <!-- smoke -->
-      <group name="sanity">
-        <method signature="Testng_multigroups_demo.test1()[pri:0, instance:demo.Testng_multigroups_demo@4667ae56]" name="test1" class="demo.Testng_multigroups_demo"/>
-        <method signature="Testng_multigroups_demo.test2()[pri:0, instance:demo.Testng_multigroups_demo@4667ae56]" name="test2" class="demo.Testng_multigroups_demo"/>
-      </group> <!-- sanity -->
-      <group name="windows.sanity">
-        <method signature="Testng_multigroups_demo.test4()[pri:0, instance:demo.Testng_multigroups_demo@4667ae56]" name="test4" class="demo.Testng_multigroups_demo"/>
-      </group> <!-- windows.sanity -->
     </groups>
-    <test name="Default test" duration-ms="72" started-at="2020-10-21T11:07:36Z" finished-at="2020-10-21T11:07:36Z">
-      <class name="demo.Testng_multigroups_demo">
-        <test-method status="PASS" signature="test1()[pri:0, instance:demo.Testng_multigroups_demo@4667ae56]" test-instance-name="" name="test1" duration-ms="29" started-at="2020-10-21T16:37:36Z" finished-at="2020-10-21T16:37:36Z">
+    <test name="Default test" duration-ms="22728" started-at="2020-10-26T04:15:24Z" finished-at="2020-10-26T04:15:47Z">
+      <class name="demo.Orangehrm_demo">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:demo.Orangehrm_demo@3c0ecd4b]" name="setUp" is-config="true" duration-ms="9658" started-at="2020-10-26T09:45:24Z" finished-at="2020-10-26T09:45:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="test1()[pri:0, instance:demo.Orangehrm_demo@3c0ecd4b]" name="test1" duration-ms="12243" started-at="2020-10-26T09:45:34Z" finished-at="2020-10-26T09:45:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test1 -->
-        <test-method status="PASS" signature="test2()[pri:0, instance:demo.Testng_multigroups_demo@4667ae56]" test-instance-name="" name="test2" duration-ms="4" started-at="2020-10-21T16:37:36Z" finished-at="2020-10-21T16:37:36Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:demo.Orangehrm_demo@3c0ecd4b]" name="tearDown" is-config="true" duration-ms="768" started-at="2020-10-26T09:45:46Z" finished-at="2020-10-26T09:45:47Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test2 -->
-        <test-method status="PASS" signature="test3()[pri:0, instance:demo.Testng_multigroups_demo@4667ae56]" test-instance-name="" name="test3" duration-ms="3" started-at="2020-10-21T16:37:36Z" finished-at="2020-10-21T16:37:36Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test3 -->
-        <test-method status="PASS" signature="test4()[pri:0, instance:demo.Testng_multigroups_demo@4667ae56]" test-instance-name="" name="test4" duration-ms="1" started-at="2020-10-21T16:37:36Z" finished-at="2020-10-21T16:37:36Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test4 -->
-      </class> <!-- demo.Testng_multigroups_demo -->
+        </test-method> <!-- tearDown -->
+      </class> <!-- demo.Orangehrm_demo -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
